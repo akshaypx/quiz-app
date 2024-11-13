@@ -1,5 +1,7 @@
 import { CSSProperties, PropsWithChildren } from "react";
 
+import "./Button.css";
+
 type ButtonProps = PropsWithChildren<{
   onClick?: () => void;
   variant: "primary" | "secondary";
@@ -14,10 +16,12 @@ const Button = ({
 }: ButtonProps) => {
   const variantStyles: Record<ButtonProps["variant"], CSSProperties> = {
     primary: {
-      backgroundColor: "blue",
+      backgroundColor: "#FCC822",
+      color: "white",
     },
     secondary: {
-      backgroundColor: "gray",
+      backgroundColor: "white",
+      color: "#FCC822",
     },
   };
 
@@ -35,11 +39,8 @@ const Button = ({
 
   return (
     <button
+      className="button"
       style={{
-        outline: "none",
-        border: "none",
-        cursor: "pointer",
-        borderRadius: 10,
         ...variantStyles[variant],
         ...sizeStyles[size],
       }}

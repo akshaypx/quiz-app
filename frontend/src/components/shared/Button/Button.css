@@ -1,0 +1,19 @@
+.button {
+  outline: none;
+  border: 0.1rem solid;
+  cursor: pointer;
+  box-shadow: 0px 15px 30px -10px rgba(252, 200, 34, 0.96);
+  -webkit-box-shadow: 0px 15px 30px -10px rgba(252, 200, 34, 0.96);
+  -moz-box-shadow: 0px 15px 30px -10px rgba(252, 200, 34, 0.96);
+  transition: 0.2s ease-in-out;
+}
+
+.button:hover {
+  outline: none;
+  border: 0.1rem solid;
+  cursor: pointer;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  transition: 0.2s ease-in-out;
+}
